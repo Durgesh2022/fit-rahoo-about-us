@@ -24,3 +24,29 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+/* Add to your global CSS */
+html {
+  scroll-behavior: auto; /* Let Lenis handle smooth scrolling */
+}
+
+body {
+  overflow-x: hidden; /* Prevent horizontal scroll issues */
+}
+
+/* Ensure Lenis can control scrolling */
+.lenis.lenis-smooth {
+  scroll-behavior: auto;
+}
+
+.cut-corners {
+  clip-path: polygon(
+    12px 0%,
+    calc(100% - 12px) 0%,
+    100% 12px,
+    100% calc(100% - 12px),
+    calc(100% - 12px) 100%,
+    12px 100%,
+    0% calc(100% - 12px),
+    0% 12px
+  );
+}
