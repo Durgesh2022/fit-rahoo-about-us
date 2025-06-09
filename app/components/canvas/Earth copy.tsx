@@ -7,10 +7,11 @@ import { AnimationMixer, Group } from "three";
 
 import CanvasLoader from "../Loader";
 
-interface GLTFResult extends ReturnType<typeof useGLTF> {
+type GLTFResult = {
   scene: Group;
   animations: THREE.AnimationClip[];
-}
+};
+
 
 const Earth: React.FC = () => {
   const { scene, animations } = useGLTF("./muscular_bodybuilder_boxing_fighter copy/scene.gltf") as GLTFResult;
