@@ -6,6 +6,33 @@ import { motion } from "framer-motion";
 import  EarthCanvas2  from "./canvas/Earth copy";
 
 const AboutUs = () => {
+  const posts = [
+  {
+    title: "Strength Training Basics",
+    description: "A beginner's guide to resistance and hypertrophy.",
+  },
+  {
+    title: "Nutrition Hacks",
+    description: "Top 10 diet tweaks for better energy and fat loss.",
+  },
+  {
+    title: "Mind-Muscle Connection",
+    description: "How mental focus boosts physical results.",
+  },
+  {
+    title: "HIIT vs LISS",
+    description: "Which cardio style is best for you?",
+  },
+  {
+    title: "Supplements Simplified",
+    description: "What to take and when — based on science.",
+  },
+  {
+    title: "Recovery Rituals",
+    description: "Improve sleep and bounce back faster.",
+  },
+];
+
     
   return (
     <>
@@ -122,25 +149,25 @@ const AboutUs = () => {
           </div>
 
           <div className="blog-right-title-container">
-            <div className="blog-right-title font-playfair">Featured Articles</div>
+            <div className="blog-right-title font-playfair">What we offer</div>
             <div className="blog-menu rounded">See All</div>
           </div>
 
           <div className="blog-right">
             {[...Array(6)].map((_, i) => (
-              <div key={i} className="blog-right-container">
-                <div className="blog-title-date">
-                  <div className="blog-right-page">Step {i + 1}</div>
-                  <div className="date">12.06.2021</div>
-                </div>
-                <div className="blog-right-page-title font-grotesk">
-                  Article Title {i + 1}
-                </div>
-                <div className="blog-right-page-subtitle font-inter">
-                  Short description of article {i + 1} goes here.
-                </div>
-              </div>
-            ))}
+  <div key={i} className="blog-right-container">
+    <div className="blog-title-date">
+      
+    </div>
+    <div className="blog-right-page-title font-grotesk">
+      {posts[i]?.title}
+    </div>
+    <div className="blog-right-page-subtitle font-inter">
+      {posts[i]?.description}
+    </div>
+  </div>
+))}
+
             <div className="circle">
               <div className="circle-title">Leave Your Old Life Behind</div>
               <div className="circle-subtitle">
