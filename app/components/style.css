@@ -337,7 +337,7 @@ body {
 }
 
 .blog-right-title {
-  font-size: 25px;
+  font-size: 30px;
   font-family: "Playfair Display", serif;
 }
 
@@ -424,16 +424,16 @@ body {
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  color: #e9e6e4;
+  color: black;
   padding: 20px;
   text-align: center;
   margin-top: 40px;
 }
 .circle-title {
   font-size: 24px;
-  font-weight: 600;
+  font-weight: 400;
   margin-bottom: 12px;
-  font-family: "Space Grotesk", sans-serif;
+  
 }
 @media screen and (max-width: 1030px) {
   .circle-title {
@@ -447,7 +447,7 @@ body {
   margin-bottom: 16px;
 }
 .circle-footer {
-  font-family: "Playfair Display", serif;
+  
   font-size: 30px;
 }
 

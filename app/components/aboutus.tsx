@@ -95,12 +95,12 @@ const AboutUs = () => {
           ].map((post, idx) => (
             <div key={idx} className="blog-header">
               <div className="blog-article header-article">
-                <div className="blog-big__title text-[#fe6107] " style={{ fontFamily: "'CAMPUS PERSONAL USE', sans-serif"}}>{post.title}</div>
+                <div className="blog-big__title text-[#fe6107] font-normal" style={{ fontFamily: "'CAMPUS PERSONAL USE', sans-serif"}}>{post.title}</div>
                 <div className="blog-menu small-title date">{post.date}</div>
               </div>
               <div className="blog-article">
                 <img src={post.image} alt={post.title} />
-                <h2>
+                <h2 style={{ fontFamily: "'CAMPUS PERSONAL USE', sans-serif"}}>
                   {post.heading.split(" ").map((word, i) =>
                     word === "Widespread" || word === "Vulnerability" || word === "Understanding" ? (
                       <span key={i}> {word} </span>
@@ -149,7 +149,7 @@ const AboutUs = () => {
           </div>
 
           <div className="blog-right-title-container">
-            <div className="blog-right-title font-playfair">What we offer</div>
+            <div className="blog-right-title font-playfair text-[#fe6107] font-normal" style={{ fontFamily: "'CAMPUS PERSONAL USE', sans-serif"}}>What we offer</div>
             <div className="blog-menu rounded">See All</div>
           </div>
 
@@ -168,7 +168,7 @@ const AboutUs = () => {
   </div>
 ))}
 
-            <div className="circle">
+            <div className="circle font-normal" style={{ fontFamily: "'CAMPUS PERSONAL USE', sans-serif"}}>
               <div className="circle-title">Leave Your Old Life Behind</div>
               <div className="circle-subtitle">
                   {"Don't try to be like someone else; be yourself. Be secure with yourself."}
