@@ -144,8 +144,7 @@ const AboutUs = () => {
             <div className="circle">
               <div className="circle-title">Leave Your Old Life Behind</div>
               <div className="circle-subtitle">
-                Don't try to be like someone else, be yourself. Be secure with
-                yourself.
+                  {"Don't try to be like someone else; be yourself. Be secure with yourself."}
               </div>
               <div className="circle-footer">Explore</div>
             </div>
