@@ -3,13 +3,13 @@
 import React, { Suspense, useEffect, useRef } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
-import { AnimationMixer, Group } from "three";
+import { AnimationMixer, Group, AnimationClip } from "three";
 
 import CanvasLoader from "../Loader";
 
 type GLTFResult = {
   scene: Group;
-  animations: THREE.AnimationClip[];
+  animations: AnimationClip[];
 };
 
 
