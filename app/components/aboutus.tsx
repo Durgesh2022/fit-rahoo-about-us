@@ -42,7 +42,7 @@ const AboutUs = () => {
 
         <div className="blog-header blog-is-sticky ">
           <div className="blog-article header-article">
-            <div className="blog-big__title2 font-playfair">About</div>
+            <div className="blog-big__title2 font-playfair" style={{ fontFamily: "'CAMPUS PERSONAL USE', sans-serif"}}>About</div>
             <div className="blog-menu rounded small-title">Why We Train</div>
           </div>
           <div className="blog-article page-number">
@@ -95,7 +95,7 @@ const AboutUs = () => {
           ].map((post, idx) => (
             <div key={idx} className="blog-header">
               <div className="blog-article header-article">
-                <div className="blog-big__title text-[#fe6107] ">{post.title}</div>
+                <div className="blog-big__title text-[#fe6107] " style={{ fontFamily: "'CAMPUS PERSONAL USE', sans-serif"}}>{post.title}</div>
                 <div className="blog-menu small-title date">{post.date}</div>
               </div>
               <div className="blog-article">
